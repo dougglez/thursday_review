@@ -3,18 +3,18 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
   $urlRouterProvider.otherwise("/");
 
   $stateProvider
-    .state("home", {
+    .state("login", {
       url: "/",
-      templateUrl: "./views/home.html"
+      templateUrl: "./views/login.html",
+      controller: 'loginCtrl'
     })
     .state("products", {
       url: "/products",
       templateUrl: "./views/products.html",
       controller: 'productsCtrl'
     })
-    // .state("product", {
-    //   url: "/products/:id",
-    //   parent: "products",
+    // .state("details", {
+    //   url: "/details/:id",
     //   controller: detailCtrl,
     //   templateUrl: "./views/productDetails.html"
     // });
