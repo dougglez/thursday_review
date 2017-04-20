@@ -1,0 +1,32 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+
+.products-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}

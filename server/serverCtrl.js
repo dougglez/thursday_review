@@ -9,7 +9,7 @@ module.exports = {
         , last = req.body.newUserObj.lastname
         , username = req.body.newUserObj.username
         , pass = req.body.newUserObj.password;
-      db.new_user([first, last, username, pass], function(err, sqlResponse) {
+      db.new_user([username, pass, first, last], function(err, sqlResponse) {
         !err ? res.status(200).send(sqlResponse) : res.status(500).send(err)
       });
   }
