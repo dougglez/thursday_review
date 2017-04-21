@@ -13,10 +13,10 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
       templateUrl: "./views/products.html",
       controller: 'productsCtrl'
     })
-    // .state("details", {
-    //   url: "/details/:id",
-    //   controller: detailCtrl,
-    //   templateUrl: "./views/productDetails.html"
-    // });
+    .state("details", {
+      url: "/details/:id",
+      controller: 'detailCtrl',
+      templateUrl: "./views/productDetails.html"
+    });
 
 })

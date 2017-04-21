@@ -1,7 +1,13 @@
 <section class="products-wrapper">
-  <div class="card" ng-repeat="product in products">
-    Name: {{product.name}}
-    <br>
-    Description: {{product.desc}}
+  
+  <div class="card" ng-repeat="product in products" ng-click="log(product)">
+    <a ui-sref="details({id: product.id})" class="product-link">
+      <div class="card-details">
+          <p class="card-name">Name: {{product.name}}</p>
+          <br>
+          <p class="card-desc">Description: {{product.desc}}</p>
+      </div>
+    </a>
   </div>
+  
 </section>

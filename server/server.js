@@ -18,15 +18,9 @@ app.set('db', massiveInstance);
 const serverCtrl = require('./serverCtrl');
 const db = app.get('db');
 
-app.get('/products', function(req, res){
-  db.get_products(function(err, response){
-    if(!err) {
-    res.send(response);
-    } else {
-      res.send(err);
-    }
-  });
-});
+app.get('/products', serverCtrl.getProducts);
+
+app.get('/product/:id', serverCtrl.getProductById);
 
 app.post('/newuser', serverCtrl.newUser);
 

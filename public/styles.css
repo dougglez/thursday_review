@@ -3,6 +3,9 @@
   justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
+  background-color: slategrey;
+  height: 80px;
+  width: 100vw;
 }
 
 .nav-bar {
@@ -10,14 +13,22 @@
   justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
+  width: 100%;
 }
 
-.nav-link a {
+.nav-link {
   text-decoration: none;
 }
 
-
 .products-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  /*background-color: grey;*/
+}
+
+.card-details {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,8 +36,15 @@
 }
 
 .card {
+  background-color: lightgoldenrodyellow;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
+  height: 10vh;
+  width: 28vw;
+  margin: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: -15px 15px 30px 1px black;
 }
